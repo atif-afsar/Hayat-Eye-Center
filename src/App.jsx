@@ -1,18 +1,21 @@
-import React from 'react'
-import Home from './Pages/Home'
-import Navbar from './Components/Home/Navbar'
-import Footer from './Components/Home/Footer'
+import { Routes, Route } from "react-router-dom";
 
-const App = () => {
+
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Navbar from "./Components/Home/Navbar";
+import Footer from "./Components/Home/Footer";
+
+export default function App() {
   return (
     <>
       <Navbar />
-    <div>
-      <Home />
-    </div>
-    <Footer />
-    </>
-  )
-}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
 
-export default App
+      <Footer />
+    </>
+  );
+}

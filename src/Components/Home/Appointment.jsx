@@ -5,7 +5,7 @@ export default function Appointment() {
   return (
     <section
       id="appointment"
-      className="relative py-20 bg-gradient-to-br from-blue-600 to-green-600 text-white overflow-hidden"
+      className="relative py-20 bg-linear-to-br from-blue-600 to-green-600 text-white overflow-hidden"
     >
       {/* Soft overlays */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
