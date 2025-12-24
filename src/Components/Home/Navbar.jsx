@@ -47,7 +47,7 @@ export default function Navbar() {
           <Link to="/services" className="text-gray-700 hover:text-blue-600 font-medium">Services</Link>
 
          
-          <button onClick={() => handleNavigate('doctor')} className="text-gray-700 hover:text-blue-600 font-medium">Doctors</button>
+          <Link to="/doctors" className="text-gray-700 hover:text-blue-600 font-medium">Doctors</Link>
           <button onClick={() => handleNavigate('testimonials')} className="text-gray-700 hover:text-blue-600 font-medium">Testimonials</button>
           <button onClick={() => handleNavigate('appointment')} className="text-gray-700 hover:text-blue-600 font-medium">Contact</button>
         </nav>
