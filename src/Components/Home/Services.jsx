@@ -43,7 +43,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="relative py-20 bg-white overflow-hidden">
+    <section id="services" className="relative py-20 bg-white overflow-hidden">
       {/* Soft background accents */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl" />
       <div className="absolute bottom-0 -right-24 w-96 h-96 bg-green-100/40 rounded-full blur-3xl" />

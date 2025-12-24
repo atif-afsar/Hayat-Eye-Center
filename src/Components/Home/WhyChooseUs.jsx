@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {
-  HeartHandshake,
+  Handshake,
   UserCheck,
   Microscope,
   ShieldCheck,
@@ -10,7 +10,7 @@ const reasons = [
   {
     title: "Patient-First Care",
     desc: "We treat every patient with compassion, respect, and personalized attention at every step.",
-    icon: HeartHandshake,
+    icon: Handshake,
   },
   {
     title: "Experienced Specialists",
@@ -31,7 +31,7 @@ const reasons = [
 
 export default function WhyChoose() {
   return (
-    <section className="relative py-20 bg-linear-to-b from-white to-blue-50 overflow-hidden">
+    <section className="relative py-20 bg-gradient-to-b from-white to-blue-50 overflow-hidden">
       {/* Soft background accents */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-green-100/40 rounded-full blur-3xl" />
       <div className="absolute bottom-0 -left-24 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl" />

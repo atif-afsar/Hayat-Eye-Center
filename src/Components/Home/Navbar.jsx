@@ -44,7 +44,9 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-6">
           <Link to="/" className="text-gray-700 hover:text-blue-600 font-medium">Home</Link>
           <Link to="/about" className="text-gray-700 hover:text-blue-600 font-medium">About</Link>
-          <button onClick={() => handleNavigate('services')} className="text-gray-700 hover:text-blue-600 font-medium">Services</button>
+          <Link to="/services" className="text-gray-700 hover:text-blue-600 font-medium">Services</Link>
+
+         
           <button onClick={() => handleNavigate('doctor')} className="text-gray-700 hover:text-blue-600 font-medium">Doctors</button>
           <button onClick={() => handleNavigate('testimonials')} className="text-gray-700 hover:text-blue-600 font-medium">Testimonials</button>
           <button onClick={() => handleNavigate('appointment')} className="text-gray-700 hover:text-blue-600 font-medium">Contact</button>
@@ -90,13 +92,13 @@ export default function Navbar() {
                 About
               </Link>
 
-              <button onClick={() => handleNavigate('services')} className="text-gray-800 text-lg font-medium py-2">
+              <Link to="/services" onClick={() => setOpen(false)} className="text-gray-800 text-lg font-medium py-2">
                 Services
-              </button>
+              </Link>
 
-              <button onClick={() => handleNavigate('doctor')} className="text-gray-800 text-lg font-medium py-2">
+              <Link to="/doctors" onClick={() => setOpen(false)} className="text-gray-800 text-lg font-medium py-2">
                 Doctors
-              </button>
+              </Link>
 
               <button onClick={() => handleNavigate('testimonials')} className="text-gray-800 text-lg font-medium py-2">
                 Testimonials
