@@ -19,8 +19,8 @@ export default function AboutDoctorsNote() {
             </blockquote>
 
             <div className="mt-4">
-              <div className="font-semibold text-gray-900">Dr. A. Hayat</div>
-              <div className="text-sm text-gray-600">Chief Medical Director & Surgeon</div>
+              <div className="font-semibold text-gray-900">   Dr. Athar Ali</div>
+              <div className="text-sm text-gray-600"> M.B.B.S., M.D., D.O.M.S. (Phaco Surgeon)</div>
             </div>
           </motion.div>
         </div>
