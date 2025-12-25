@@ -35,7 +35,7 @@ export default function ServiceCategoryTabs({ onChange }) {
                   px-5 py-2 rounded-full text-sm font-medium transition
                   ${
                     isActive
-                      ? "bg-blue-600 text-white shadow-sm"
+                      ? "bg-gradient-to-r from-blue-600 to-green-500 text-white shadow-sm"
                       : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }
                 `}

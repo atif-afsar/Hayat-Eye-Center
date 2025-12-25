@@ -21,7 +21,7 @@ export default function AboutHero() {
 
             <div className="absolute left-6 top-6 bottom-6 flex flex-col justify-center text-left text-white max-w-2xl">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-                Vision for a Better Life
+                Vision for a Better <span className="text-blue-600"> Life</span>
               </h1>
               <p className="mt-3 text-sm md:text-base text-white/90 max-w-xl">
                 At Hayat Eye Center, we combine decades of medical excellence

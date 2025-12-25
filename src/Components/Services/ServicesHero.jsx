@@ -26,7 +26,7 @@ export default function ServicesHero() {
               className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
             >
               Advanced Treatments for <br />
-              a Clearer Future
+              a <span className="text-blue-600"> Clearer Vision</span>
             </motion.h1>
 
             {/* Description */}
@@ -48,7 +48,7 @@ export default function ServicesHero() {
               transition={{ delay: 0.35 }}
               className="mt-8 flex flex-wrap gap-4"
             >
-              <button className="px-6 py-3 bg-blue-600 text-white rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
+              <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-green-500 text-white rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
                 Explore Services
               </button>
 

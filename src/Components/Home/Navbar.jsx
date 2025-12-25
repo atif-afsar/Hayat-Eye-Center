@@ -52,12 +52,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <div className="hidden md:block">
-          <button
-            onClick={() => handleNavigate('appointment')}
-            className="px-6 py-2 rounded-full bg-gradient-to-r from-blue-600 to-green-500 text-white font-medium shadow-md"
-          >
-            Book Appointment
-          </button>
+          <Link to="/contact" className="px-6 py-2 rounded-full bg-gradient-to-r from-blue-600 to-green-500 text-white font-medium shadow-md">Book Appointment</Link>
         </div>
 
         {/* MOBILE TOGGLE */}

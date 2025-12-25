@@ -31,7 +31,7 @@ export default function ProcedureFAQ() {
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">
-            Frequently Asked Questions
+            Frequently Asked <span className="text-blue-600">Questions</span>
           </h2>
           <p className="mt-3 text-gray-600">
             Clear answers to common concerns about eye treatments and procedures.

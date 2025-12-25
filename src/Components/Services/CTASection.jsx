@@ -33,13 +33,10 @@ export default function CTASection() {
           transition={{ delay: 0.3 }}
           className="mt-8 flex flex-wrap justify-center gap-4"
         >
-          <button className="px-7 py-3 bg-white text-blue-600 rounded-lg text-sm font-semibold hover:bg-blue-50 transition">
-            Book Appointment
-          </button>
-
-          <button className="px-7 py-3 border border-white rounded-lg text-sm font-semibold hover:bg-white/10 transition">
-            Talk to an Expert
-          </button>
+          <div className="mt-6 flex justify-center gap-4">
+            <a href="tel:9536942000" className="bg-white text-blue-600 px-5 py-2 rounded-md font-semibold">Book an Appointment</a>
+            <a href="/contact" className="border border-white/30 text-white px-5 py-2 rounded-md">Contact Us</a>
+          </div>
         </motion.div>
 
       </div>
