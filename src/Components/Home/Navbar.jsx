@@ -32,9 +32,7 @@ export default function Navbar() {
 
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-9 h-9 rounded-full bg-gradient-to-r from-blue-600 to-green-500 flex items-center justify-center text-white font-bold">
-            H
-          </div>
+         <img src="/images/hayatLogo.png" alt="Hayat Eye Center Logo" className="w-13 h-13 rounded-full" />
           <span className="text-lg sm:text-xl font-semibold text-gray-800">
             Hayat <span className="text-blue-600">Eye Center</span>
           </span>
@@ -49,7 +47,7 @@ export default function Navbar() {
          
           <Link to="/doctors" className="text-gray-700 hover:text-blue-600 font-medium">Doctors</Link>
           <Link to="/testimonials" className="text-gray-700 hover:text-blue-600 font-medium">Testimonials</Link> 
-          <button onClick={() => handleNavigate('appointment')} className="text-gray-700 hover:text-blue-600 font-medium">Contact</button>
+          <Link to="/contact" className="text-gray-700 hover:text-blue-600 font-medium">Contact</Link>
         </nav>
 
         {/* CTA */}
@@ -103,10 +101,14 @@ export default function Navbar() {
              <Link to="/testimonials" onClick={() => setOpen(false)} className="text-gray-800 text-lg font-medium py-2">
                 Testimonials
               </Link>
+              <Link to="/contact" onClick={() => setOpen(false)} className="text-gray-800 text-lg font-medium py-2">
+                Contact
+              </Link>
 
               {/* CTA */}
               <button
-                onClick={() => handleNavigate('appointment')}
+              
+                onClick={() => handleNavigate('/contact')}
                 className="mt-3 block w-full rounded-full bg-gradient-to-r from-blue-600 to-green-500 text-white py-3 font-semibold"
               >
                 Book Appointment

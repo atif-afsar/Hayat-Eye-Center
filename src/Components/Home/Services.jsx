@@ -81,7 +81,7 @@ export default function Services() {
               >
                 {/* Icon */}
                 <div className="shrink-0">
-                  <Icon className="w-8 h-8 text-blue-600" strokeWidth={1.8} />
+                  <Icon className="w-8 h-8  text-green-600" strokeWidth={1.8} />
                 </div>
 
                 {/* Content */}
