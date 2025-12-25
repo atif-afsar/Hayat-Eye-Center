@@ -74,7 +74,7 @@ export default function ServicesGrid({ activeCategory }) {
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl font-bold text-gray-900">
-            World-Class Eye Care Specialties
+            World-Class Eye Care <span className="text-blue-600">Services</span>
           </h2>
           <p className="mt-4 text-gray-600">
             Our clinic is equipped with the latest diagnostic and surgical

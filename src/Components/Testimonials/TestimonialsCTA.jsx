@@ -41,14 +41,14 @@ export default function TestimonialsCTA() {
           className="mt-8 flex flex-col sm:flex-row gap-4 justify-center"
         >
           <Link
-            to="/appointment"
+            to="/contact"
             className="px-8 py-3 rounded-full bg-white text-blue-700 font-semibold shadow-lg hover:bg-blue-50 transition"
           >
             Book Appointment
           </Link>
 
           <a
-            href="tel:+91XXXXXXXXXX"
+            href="tel:+919536942000"
             className="px-8 py-3 rounded-full border border-white/40 text-white font-semibold hover:bg-white/10 transition"
           >
             Call Now

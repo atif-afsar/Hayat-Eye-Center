@@ -12,7 +12,7 @@ export default function AppointmentForm() {
         <input className="input" placeholder="Full Name" />
         <input className="input" placeholder="Phone Number" />
         <input className="input" placeholder="Email Address" />
-        <select className="input ">
+        <select className="input text-zinc-400">
           <option>General Consultation</option>
           <option>Cataract</option>
           <option>LASIK</option>

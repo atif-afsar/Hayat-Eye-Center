@@ -48,9 +48,11 @@ export default function DoctorProfile() {
             </p>
 
             <div className="mt-6">
-              <button className="px-6 py-3 bg-blue-600 text-white rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
-                Book Appointment
-              </button>
+              <a href="tel:9536942000">
+                <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-green-500 text-white rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
+                  Book Appointment
+                </button>
+              </a>
             </div>
           </motion.div>
 

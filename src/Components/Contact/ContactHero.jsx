@@ -9,7 +9,7 @@ export default function ContactHero() {
                           flex items-center justify-center 
                           shadow-md ring-2 ring-blue-100 dark:ring-blue-500/30">
             <img
-              src="/images/hayatLogo.png"   // <-- put logo here
+              src="/images/hayatLogo.png"   
               alt="Hayat Eye Center Logo"
               className="w-20 h-20 object-contain"
             />

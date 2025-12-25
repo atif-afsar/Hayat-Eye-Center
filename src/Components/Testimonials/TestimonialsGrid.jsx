@@ -40,7 +40,7 @@ export default function TestimonialsGrid() {
           className="text-center mb-14"
         >
           <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
-            What Our Patients Say
+            What Our Patients <span className="text-blue-600">Say</span>
           </h3>
           <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
             Genuine feedback from patients who trusted Hayat Eye Centre
