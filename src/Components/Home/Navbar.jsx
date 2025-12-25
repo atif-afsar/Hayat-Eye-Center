@@ -48,7 +48,7 @@ export default function Navbar() {
 
          
           <Link to="/doctors" className="text-gray-700 hover:text-blue-600 font-medium">Doctors</Link>
-          <button onClick={() => handleNavigate('testimonials')} className="text-gray-700 hover:text-blue-600 font-medium">Testimonials</button>
+          <Link to="/testimonials" className="text-gray-700 hover:text-blue-600 font-medium">Testimonials</Link> 
           <button onClick={() => handleNavigate('appointment')} className="text-gray-700 hover:text-blue-600 font-medium">Contact</button>
         </nav>
 
@@ -100,9 +100,9 @@ export default function Navbar() {
                 Doctors
               </Link>
 
-              <button onClick={() => handleNavigate('testimonials')} className="text-gray-800 text-lg font-medium py-2">
+             <Link to="/testimonials" onClick={() => setOpen(false)} className="text-gray-800 text-lg font-medium py-2">
                 Testimonials
-              </button>
+              </Link>
 
               {/* CTA */}
               <button
