@@ -9,13 +9,16 @@ import Testimonials from "./Pages/Testimonials";
 import Contact from "./Pages/Contact";
 import ScrollToTop from "./Pages/ScrollToTop";
 import ScrollToTopOnRouteChange from "./ScrollToTopOnRouteChange";
+import SmoothScroll from "./Pages/SmoothScroll";
 
 export default function App() {
   return (
     <>
+    
       <Navbar />
       <ScrollToTopOnRouteChange />
       <ScrollToTop />
+       <SmoothScroll>
        
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,8 +29,9 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
 
       </Routes>
-
+ </SmoothScroll>
       <Footer />
+     
     </>
   );
 }

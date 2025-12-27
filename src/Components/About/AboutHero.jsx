@@ -14,8 +14,8 @@ export default function AboutHero() {
           <div className="relative h-56 md:h-72 lg:h-80">
             <img
               alt="clinic"
-              src="https://i.pinimg.com/1200x/4c/d9/d8/4cd9d81c050a0839c2a190eb77780106.jpg"
-              className="absolute inset-0 w-full h-full object-cover object-top brightness-90"
+              src="images/about.jpg"
+              className="absolute inset-0 w-full h-full object-cover brightness-90"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
 

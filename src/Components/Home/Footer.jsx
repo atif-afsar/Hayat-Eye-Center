@@ -5,6 +5,7 @@ import {
   Facebook,
   Instagram,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -29,10 +30,12 @@ export default function Footer() {
             Quick Links
           </h4>
           <ul className="space-y-2 text-sm">
-            <li><a href="#services" className="hover:text-white">Services</a></li>
-            <li><a href="#doctor" className="hover:text-white">Doctor</a></li>
-            <li><a href="#clinic" className="hover:text-white">Clinic</a></li>
-            <li><a href="#appointment" className="hover:text-white">Appointment</a></li>
+            <li><Link to="/about" className="hover:text-white">About</Link></li>
+
+            <li><Link to="/services" className="hover:text-white">Services</Link></li>
+            <li><Link to="/doctor" className="hover:text-white">Doctor</Link></li>
+            <li><Link to="/testimonials" className="hover:text-white">Testimonials</Link></li>
+            <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
           </ul>
         </div>
 

@@ -32,7 +32,7 @@ export default function Hero() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="#appointment"
+              href="/contact"
               className="px-6 py-3 rounded-full bg-linear-to-r from-blue-600 to-green-500 text-white font-medium shadow-md"
             >
               Book Appointment
@@ -41,7 +41,7 @@ export default function Hero() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="tel:+91XXXXXXXXXX"
+              href="tel:+919007966173"
               className="px-6 py-3 rounded-full border border-blue-600 text-blue-600 font-medium hover:bg-blue-50"
             >
               Call Now
@@ -72,6 +72,8 @@ export default function Hero() {
             src="https://i.pinimg.com/1200x/68/29/f5/6829f57bfc4334cf2af83746fb79920f.jpg"
             alt="Hayat Eye Center Illustration"
             className="relative z-10 w-full max-w-md md:max-w-lg lg:max-w-xl object-contain mix-blend-multiply"
+            data-scroll
+            data-scroll-speed="-2"
           />
         </motion.div>
 
