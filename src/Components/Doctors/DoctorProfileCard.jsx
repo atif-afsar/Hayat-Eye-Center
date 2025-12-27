@@ -14,7 +14,7 @@ export default function DoctorProfile() {
             className="flex justify-center"
           >
             <img
-              src="https://i.pinimg.com/736x/4c/aa/04/4caa04a958f1fb3b0ba682fe766f977a.jpg"
+              src="/images/profile.jpg"
               alt="Dr. Athar Ali - Ophthalmologist"
               className="w-full max-w-md rounded-2xl shadow-xl object-cover"
             />

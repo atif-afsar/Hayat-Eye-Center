@@ -10,7 +10,7 @@ export default function ContactCTA() {
           </p>
         </div>
         <img
-          src="/images/doctor-illustration.png"
+          src="images/about.jpg"
           alt="Doctor"
           className="h-full object-cover"
         />

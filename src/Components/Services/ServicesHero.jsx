@@ -65,11 +65,11 @@ export default function ServicesHero() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <img
-              src="https://i.pinimg.com/1200x/6f/83/7a/6f837ad2025e9918d8a54806f8562d70.jpg"
-              alt="Eye examination at Hayat Eye Center"
-              className="w-full rounded-2xl object-cover"
-            />
+           <img
+            src="/images/Athar.jpg"
+            alt="Eye examination at Hayat Eye Center"
+            className="w-full h-64 md:h-72 rounded-2xl object-cover"
+          />
           </motion.div>
 
         </div>

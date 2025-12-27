@@ -19,7 +19,7 @@ export default function LeadDoctor() {
           className="flex justify-center"
         >
           <img
-            src="https://i.pinimg.com/736x/a3/09/6b/a3096b623ef66672f883a07ec2677fe4.jpg"
+            src="/images/dp.jpg"
             alt="Dr Athar Ali - Hayat Eye Center"
             className="w-72 h-72 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg"
           />

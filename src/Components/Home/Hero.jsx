@@ -68,13 +68,21 @@ export default function Hero() {
           <div className="hidden md:block absolute bottom-0 -left-10 w-80 h-80 bg-green-200/40 rounded-full blur-3xl" />
 
           {/* Image blended with bg */}
-          <img
-            src="https://i.pinimg.com/1200x/68/29/f5/6829f57bfc4334cf2af83746fb79920f.jpg"
+         <img
+            src="images/img1.jpg"
             alt="Hayat Eye Center Illustration"
-            className="relative z-10 w-full max-w-md md:max-w-lg lg:max-w-xl object-contain mix-blend-multiply"
-            data-scroll
-            data-scroll-speed="-2"
+            className="
+              relative z-10
+              w-full
+              max-w-none      
+              h-auto
+              object-contain
+              mix-blend-multiply
+              scale-110 sm:scale-125 md:scale-140 lg:scale-150
+            "
           />
+
+
         </motion.div>
 
       </div>
