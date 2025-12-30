@@ -15,7 +15,7 @@ const services = [
     description:
       "Restore clarity with advanced phacoemulsification and micro-incision cataract surgery.",
     icon: <Eye size={20} />,
-    linkText: "View Procedure Details",
+   
   },
   {
     title: "Refractive Surgery",
@@ -23,7 +23,7 @@ const services = [
     description:
       "Freedom from glasses with LASIK, SMILE Pro, PRK, and ICL procedures.",
     icon: <Focus size={20} />,
-    linkText: "Explore Options",
+    
   },
   {
     title: "Retina Services",
@@ -31,7 +31,7 @@ const services = [
     description:
       "Advanced treatment for diabetic retinopathy, macular degeneration, and retinal detachment.",
     icon: <Layers size={20} />,
-    linkText: "Learn More",
+   
   },
   {
     title: "Glaucoma Management",
@@ -39,7 +39,7 @@ const services = [
     description:
       "Early diagnosis and advanced laser or surgical glaucoma treatments.",
     icon: <Shield size={20} />,
-    linkText: "View Treatments",
+   
   },
   {
     title: "Pediatric Ophthalmology",
@@ -47,7 +47,7 @@ const services = [
     description:
       "Specialized eye care for children including squint and lazy eye treatment.",
     icon: <Baby size={20} />,
-    linkText: "Child Care Details",
+    
   },
   {
     title: "Cornea & Ocular Surface",
@@ -55,7 +55,7 @@ const services = [
     description:
       "Treatment for corneal disorders, dry eye syndrome, and keratoconus.",
     icon: <Activity size={20} />,
-    linkText: "Read More",
+  
   },
 ];
 

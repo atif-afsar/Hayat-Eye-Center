@@ -3,17 +3,17 @@ import { motion } from "framer-motion";
 const images = [
   {
     src:
-      "https://i.pinimg.com/736x/09/d2/74/09d274c0145829295679d5645ad585ee.jpg",
+      "/images/facilities1.png",
     title: "Diagnostic Imaging"
   },
   {
     src:
-      "https://i.pinimg.com/736x/5b/10/57/5b105748d90abe41f3b73a88ad3db33c.jpg",
+      "/images/facilities2.png",
     title: "Comfortable Consultation Rooms"
   },
   {
     src:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwDxx0_zDEGNxKEsL_Wpz4gq9jeq7ndyJ5pA&s",
+      "/images/facilities3.png",
     title: "Advanced Surgical Suite"
   },
 ];
