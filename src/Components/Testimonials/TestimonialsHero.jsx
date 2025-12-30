@@ -1,7 +1,20 @@
 import { motion } from "framer-motion";
 import { Star, HeartPulse, ShieldCheck } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function TestimonialsHero() {
+  const navigate = useNavigate();
+
+  function handleViewAll(e) {
+    e.preventDefault();
+    const el = document.getElementById("testimonials-grid");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      sessionStorage.setItem("scrollToTestimonials", "1");
+      navigate("/testimonials");
+    }
+  }
   return (
     <section className="pt-28 pb-24 bg-gradient-to-b from-blue-50/60 to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
@@ -102,7 +115,7 @@ export default function TestimonialsHero() {
             viewport={{ once: true }}
             className="mt-10"
           >
-            <button className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
+            <button onClick={handleViewAll} type="button" className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
               View All Testimonials
             </button>
           </motion.div>

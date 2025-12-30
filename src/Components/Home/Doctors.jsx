@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Stethoscope, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function LeadDoctor() {
   return (
@@ -75,12 +76,12 @@ export default function LeadDoctor() {
 
           {/* CTA */}
           <div className="pt-4">
-            <a
-              href="#appointment"
+            <Link
+              to="/contact"
               className="inline-block px-6 py-3 rounded-full bg-linear-to-r from-blue-600 to-green-500 text-white font-medium shadow-md"
             >
               Book Appointment with Doctor
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

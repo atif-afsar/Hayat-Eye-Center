@@ -29,7 +29,7 @@ const testimonials = [
 
 export default function TestimonialsGrid() {
   return (
-    <section className="py-20 bg-white">
+    <section id="testimonials-grid" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Section Heading */}

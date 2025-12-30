@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -29,14 +30,14 @@ export default function Hero() {
 
           {/* CTA BUTTONS */}
           <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-            <motion.a
+            <Link
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/contact"
+              to="/contact"
               className="px-6 py-3 rounded-full bg-linear-to-r from-blue-600 to-green-500 text-white font-medium shadow-md"
             >
               Book Appointment
-            </motion.a>
+            </Link>
 
             <motion.a
               whileHover={{ scale: 1.05 }}
