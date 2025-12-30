@@ -1,7 +1,22 @@
 import { motion } from "framer-motion";
 import { Eye, ShieldCheck, Activity, Baby } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function ServicesHero() {
+   const navigate = useNavigate();
+
+function handleViewAll(e) {
+    e.preventDefault();
+    const el = document.getElementById("services-grid");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      sessionStorage.setItem("scrollToServices", "1");
+      navigate("/services");
+    }
+  }
+  
   return (
     <section className="pt-32 pb-24 bg-[#F8FAFC] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
@@ -84,13 +99,13 @@ export default function ServicesHero() {
               transition={{ delay: 0.5 }}
               className="mt-10 flex flex-wrap gap-4"
             >
-              <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-green-500 text-white rounded-lg text-sm font-semibold hover:opacity-90 transition">
+              <button  onClick={handleViewAll} type="button" className="px-6 py-3 bg-gradient-to-r from-blue-600 to-green-500 text-white rounded-lg text-sm font-semibold hover:opacity-90 transition">
                 Explore Services
               </button>
 
-              <button className="px-6 py-3 border border-gray-300 rounded-lg text-sm font-semibold text-gray-700 hover:bg-gray-100 transition">
+              <Link to="/contact" className="px-6 py-3 border border-gray-300 rounded-lg text-sm font-semibold text-gray-700 hover:bg-gray-100 transition">
                 Book Appointment
-              </button>
+              </Link>
             </motion.div>
           </div>
 

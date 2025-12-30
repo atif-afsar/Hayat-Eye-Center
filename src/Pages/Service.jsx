@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import ServicesHero from "../Components/Services/ServicesHero";
 import ServiceCategoryTabs from "../Components/Services/ServiceCategoryTabs";
@@ -10,6 +10,18 @@ import CTASection from "../Components/Services/CTASection";
 const Service = () => {
  
   const [category, setCategory] = useState("All Services");
+
+  useEffect(() => {
+    if (sessionStorage.getItem("scrollToServices")) {
+      setTimeout(() => {
+        const el = document.getElementById("services-grid");
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+        sessionStorage.removeItem("scrollToServices");
+      }, 120);
+    }
+  }, []);
 
   return (
     <div>

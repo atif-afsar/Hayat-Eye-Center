@@ -68,7 +68,7 @@ export default function ServicesGrid({ activeCategory }) {
         );
 
   return (
-    <section className="py-20 bg-[#F8FAFC]">
+    <section id="services-grid" className="py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Section Heading */}
