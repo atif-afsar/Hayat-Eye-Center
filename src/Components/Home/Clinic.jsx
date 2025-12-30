@@ -19,9 +19,9 @@ export default function Clinic() {
           className="flex justify-center"
         >
           <img
-            src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzFKfuBP4XelAjbQDFjZyaOQbIY_e5DuVpHIka9fNnZOEEyz1RH0o-gvIaKtPQWqjyDQ-EZsFm3G0B4yYa7LnT3-0aRjG2EuEB-dFqHlPjo2L1dbI9HqBm-hoVFCUeSr8o1g08j=s1360-w1360-h1020-rw"
+            src="/images/IMG4.jpg"
             alt="Hayat Eye Center Aligarh"
-            className="w-full max-w-xl object-cover rounded-2xl shadow-lg"
+            className="w-full max-w-lg object-cover rounded-2xl shadow-lg"
           />
         </motion.div>
 

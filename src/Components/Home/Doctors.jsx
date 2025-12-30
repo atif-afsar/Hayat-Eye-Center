@@ -4,35 +4,20 @@ import { Link } from "react-router-dom";
 
 export default function LeadDoctor() {
   return (
-    <section className="relative py-20 bg-linear-to-b from-white to-green-50 overflow-hidden">
+    <section className="relative py-20 bg-gradient-to-b from-white to-green-50 overflow-hidden">
       {/* Soft background accents */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl" />
       <div className="absolute bottom-0 -left-24 w-96 h-96 bg-green-100/40 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
 
-        {/* DOCTOR IMAGE */}
+        {/* TEXT CONTENT — LEFT */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="flex justify-center"
-        >
-          <img
-            src="/images/dp.jpg"
-            alt="Dr Athar Ali - Hayat Eye Center"
-            className="w-72 h-72 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg"
-          />
-        </motion.div>
-
-        {/* DOCTOR DETAILS */}
-        <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="space-y-5 text-center lg:text-left"
+          className="space-y-5 text-center lg:text-left order-2 lg:order-1"
         >
           <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-medium">
             Lead Eye Specialist
@@ -51,7 +36,7 @@ export default function LeadDoctor() {
             <div className="flex justify-center lg:justify-start gap-2 items-start">
               <GraduationCap className="w-5 h-5 text-green-600 mt-0.5" />
               <span>
-                Senior Eye Specialist with experience at leading eye hospitals
+                Senior Eye Specialist with experience at leading eye hospitals,
                 including district and referral centers.
               </span>
             </div>
@@ -78,12 +63,28 @@ export default function LeadDoctor() {
           <div className="pt-4">
             <Link
               to="/contact"
-              className="inline-block px-6 py-3 rounded-full bg-linear-to-r from-blue-600 to-green-500 text-white font-medium shadow-md"
+              className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-green-500 text-white font-medium shadow-md hover:opacity-90 transition"
             >
               Book Appointment with Doctor
             </Link>
           </div>
         </motion.div>
+
+        {/* IMAGE — RIGHT */}
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="flex justify-center order-1 lg:order-2"
+        >
+          <img
+            src="/images/image.png"
+            alt="Dr Athar Ali - Hayat Eye Center"
+            className="w-full max-w-lg object-cover rounded-2xl shadow-lg"
+          />
+        </motion.div>
+
       </div>
     </section>
   );
