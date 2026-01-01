@@ -61,14 +61,7 @@ export default function ContactHero() {
               Book Appointment
             </a>
 
-            <a
-              href="/contact"
-              className="px-6 py-3 rounded-xl border border-blue-600 
-              text-blue-600 font-semibold hover:bg-blue-50 
-              dark:hover:bg-blue-500/10 transition"
-            >
-              Contact Us
-            </a>
+           
           </div>
         </div>
 

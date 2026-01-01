@@ -1,11 +1,17 @@
 import { MessageCircle } from "lucide-react";
 
 export default function WhatsAppButton() {
+  const phoneNumber = "919536942000"; // country code + number
+  const message = encodeURIComponent(
+    "Hello! I would like to know more about Hayat Eye Center."
+  );
+
   return (
     <a
-      href="tel:9536942000"
+      href={`https://wa.me/${phoneNumber}?text=${message}`}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
       className="
         fixed 
         bottom-6 
