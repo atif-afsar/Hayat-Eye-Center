@@ -134,7 +134,7 @@ export default function TestimonialsHero() {
           <div className="absolute -inset-6 bg-blue-200/30 rounded-full blur-3xl" />
 
           <img
-            src="https://i.pinimg.com/736x/a2/07/41/a20741130b5afb3fd355b6f476d575e8.jpg"
+            src="/images/instru.jpg"
             alt="Happy patient at Hayat Eye Centre"
             className="relative w-full max-w-md mx-auto rounded-2xl shadow-xl object-cover"
           />

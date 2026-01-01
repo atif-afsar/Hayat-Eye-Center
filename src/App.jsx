@@ -10,6 +10,7 @@ import Contact from "./Pages/Contact";
 import ScrollToTop from "./Pages/ScrollToTop";
 import ScrollToTopOnRouteChange from "./ScrollToTopOnRouteChange";
 import SmoothScroll from "./Pages/SmoothScroll";
+import WhatsAppButton from "./Pages/WhatsAppButton";
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
 
       </Routes>
+       <WhatsAppButton />
  </SmoothScroll>
       <Footer />
      
