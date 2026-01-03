@@ -15,7 +15,7 @@ export default function Loader() {
             animate={{ rotate: 360 }}
             transition={{
               repeat: Infinity,
-              duration: 1.3,
+              duration: 1,
               ease: "linear",
             }}
           />
@@ -24,23 +24,23 @@ export default function Loader() {
           <motion.div
             className="absolute w-16 h-16 rounded-full bg-gradient-to-r
                        from-green-400/30 to-blue-400/30 blur-xl"
-            animate={{ scale: [1, 1.2, 1] }}
+            animate={{ scale: [1, 1.15, 1] }}
             transition={{
               repeat: Infinity,
-              duration: 1.5,
+              duration: 0.8,
               ease: "easeInOut",
             }}
           />
 
           {/* LOGO */}
           <motion.img
-            src="/images/hayatLogo.png"   // <-- your logo path
+            src="/images/hayatLogo.png"
             alt="Hayat Eye Center Logo"
             className="w-12 h-12 object-contain z-10"
-            animate={{ scale: [1, 1.08, 1] }}
+            animate={{ scale: [1, 1.05, 1] }}
             transition={{
               repeat: Infinity,
-              duration: 1.4,
+              duration: 0.9,
               ease: "easeInOut",
             }}
           />
@@ -48,9 +48,9 @@ export default function Loader() {
 
         {/* BRAND TEXT */}
         <motion.div
-          initial={{ opacity: 0, y: 6 }}
+          initial={{ opacity: 0, y: 4 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
+          transition={{ duration: 0.35 }}
           className="text-center"
         >
           <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">

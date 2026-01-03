@@ -22,7 +22,7 @@ export default function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1800); // smooth medical feel
+    }, 1000); // smooth medical feel
 
     return () => clearTimeout(timer);
   }, []);
