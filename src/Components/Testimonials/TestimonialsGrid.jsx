@@ -7,7 +7,7 @@ const testimonials = [
     review:
       "The treatment was smooth and painless. Dr. Athar Ali explained everything clearly. My vision is perfect now.",
     rating: 5,
-    image: "https://i.pinimg.com/1200x/1c/85/2e/1c852ea928150dfcf54c5457dbca0a35.jpg",
+    image: "/images/testi1.png",
   },
   {
     name: "Mohammad Arif",
@@ -15,7 +15,7 @@ const testimonials = [
     review:
       "Very professional staff and excellent care. The hospital is clean and well managed. Highly recommended.",
     rating: 5,
-    image: "https://i.pinimg.com/736x/eb/76/a4/eb76a46ab920d056b02d203ca95e9a22.jpg",
+    image: "/images/testi2.png",
   },
   {
     name: "Neha Sharma",
@@ -23,7 +23,7 @@ const testimonials = [
     review:
       "I felt comfortable throughout the process. Doctor listened patiently and gave the right guidance.",
     rating: 4,
-    image: "https://i.pinimg.com/736x/80/26/aa/8026aa249c4ffd3c85b758b28870af48.jpg",
+    image: "images/testi3.png",
   },
 ];
 
