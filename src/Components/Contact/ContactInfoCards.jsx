@@ -1,12 +1,12 @@
 const cards = [
   {
     title: "Visit Us",
-    desc: "Civil Lines, Aligarh\nUttar Pradesh, 202001",
+    desc: "Kela Nagar Chauraha, Jivangarh Road, Aligarh\nUttar Pradesh, 202001",
     icon: "📍",
   },
   {
     title: "Call Us",
-    desc: "+91 98765 43210\nMon–Sat, 9am–7pm",
+    desc: "+91 9007966173\nMon–Sat, 9am–7pm",
     icon: "📞",
   },
   {

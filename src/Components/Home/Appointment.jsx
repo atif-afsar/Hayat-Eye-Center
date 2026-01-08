@@ -59,12 +59,12 @@ export default function Appointment() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="tel:9536942000"
+            href="tel:+919007966173"
             className="flex flex-col items-center gap-3 bg-white rounded-2xl p-6 text-blue-700 shadow-lg"
           >
             <CalendarCheck className="w-8 h-8" />
             <span className="font-semibold">Book Appointment</span>
-            <span className="text-sm">9536942000</span>
+            <span className="text-sm">9007966173</span>
           </motion.a>
 
         </div>

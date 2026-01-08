@@ -34,7 +34,7 @@ export default function CTASection() {
           className="mt-8 flex flex-wrap justify-center gap-4"
         >
           <div className="mt-6 flex justify-center gap-4">
-            <a href="tel:9536942000" className="bg-white text-blue-600 px-5 py-2 rounded-md font-semibold">Book an Appointment</a>
+            <a href="tel:9007966173" className="bg-white text-blue-600 px-5 py-2 rounded-md font-semibold">Book an Appointment</a>
             <a href="/contact" className="border border-white/30 text-white px-5 py-2 rounded-md">Contact Us</a>
           </div>
         </motion.div>

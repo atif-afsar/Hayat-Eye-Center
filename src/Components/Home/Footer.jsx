@@ -70,7 +70,7 @@ export default function Footer() {
             <a href="#" className="hover:text-white">
               <Facebook />
             </a>
-            <a href="#" className="hover:text-white">
+            <a href="https://www.instagram.com/hayat_eyecentre?igsh=enFiNjBzNjhsdXFs" className="hover:text-white">
               <Instagram />
             </a>
           </div>

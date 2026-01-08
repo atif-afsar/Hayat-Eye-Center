@@ -48,7 +48,7 @@ export default function DoctorProfile() {
             </p>
 
             <div className="mt-6">
-              <a href="tel:9536942000">
+              <a href="tel:9007966173">
                 <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-green-500 text-white rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
                   Book Appointment
                 </button>

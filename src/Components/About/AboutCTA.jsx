@@ -14,7 +14,7 @@ export default function AboutCTA() {
           <p className="mt-3 text-white/90">Don't let vision problems hold you back. Schedule a consultation with our experts today and experience the difference.</p>
 
           <div className="mt-6 flex justify-center gap-4">
-            <a href="tel:9536942000" className="bg-white text-blue-600 px-5 py-2 rounded-md font-semibold">Book an Appointment</a>
+            <a href="tel:9007966173" className="bg-white text-blue-600 px-5 py-2 rounded-md font-semibold">Book an Appointment</a>
             <a href="/contact" className="border border-white/30 text-white px-5 py-2 rounded-md">Contact Us</a>
           </div>
         </motion.div>

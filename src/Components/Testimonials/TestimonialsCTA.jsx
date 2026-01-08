@@ -44,11 +44,11 @@ export default function TestimonialsCTA() {
             to="/contact"
             className="px-8 py-3 rounded-full bg-white text-blue-700 font-semibold shadow-lg hover:bg-blue-50 transition"
           >
-            Book Appointment
+            Contact Us
           </Link>
 
           <a
-            href="tel:+919536942000"
+            href="tel:+919007966173"
             className="px-8 py-3 rounded-full border border-white/40 text-white font-semibold hover:bg-white/10 transition"
           >
             Call Now

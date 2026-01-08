@@ -54,7 +54,7 @@ export default function ContactHero() {
           {/* CTA Buttons */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
-              href="tel:9536942000"
+              href="tel:9007966173"
               className="px-6 py-3 rounded-xl bg-blue-600 text-white 
               font-semibold shadow-lg hover:bg-blue-700 transition"
             >
