@@ -32,7 +32,7 @@ export default function Navbar() {
 
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-2">
-         <img src="/images/hayatLogo.png" alt="Hayat Eye Center Logo" className="w-13 h-13 rounded-full" />
+        <img src="/images/hayatLogo.png" className="w-13 h-13" />
           <span className="text-lg sm:text-xl font-semibold text-gray-800">
             Hayat <span className="text-blue-600">Eye Center</span>
           </span>

@@ -22,11 +22,17 @@ export default function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+  const visited = sessionStorage.getItem("visited");
+
+  if (!visited) {
+    setTimeout(() => {
       setLoading(false);
-    }, 1000); // smooth medical feel
-    return () => clearTimeout(timer);
-  }, []);
+      sessionStorage.setItem("visited", "true");
+    }, 800);
+  } else {
+    setLoading(false);
+  }
+}, []);
 
   if (loading) return <Loader />;
 
