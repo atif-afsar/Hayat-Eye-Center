@@ -67,12 +67,31 @@ export default function Footer() {
 
           {/* SOCIAL */}
           <div className="flex gap-4 mt-6">
-            <a href="#" className="hover:text-white">
+            {/* <a href="#" className="hover:text-white">
               <Facebook />
-            </a>
-            <a href="https://www.instagram.com/hayat_eyecentre?igsh=enFiNjBzNjhsdXFs" className="hover:text-white">
-              <Instagram />
-            </a>
+            </a> */}
+           <a
+              href="https://www.instagram.com/hayat_eyecentre?igsh=enFiNjBzNjhsdXFs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                group
+                w-10 h-10
+                flex items-center justify-center
+                rounded-full
+                bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-400
+                shadow-md
+                transition-all duration-300
+                hover:scale-110
+                hover:shadow-xl
+              "
+                          >
+                <Instagram
+                  size={20}
+                  className="text-white transition-transform duration-300 group-hover:rotate-6"
+                />
+              </a>
+
           </div>
         </div>
 
