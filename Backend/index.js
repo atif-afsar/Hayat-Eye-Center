@@ -1,32 +1,14 @@
 import express from "express";
 import nodemailer from "nodemailer";
 import cors from "cors";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 const app = express();
-app.use(cors({ origin: "*" }));
-app.use(express.json());
 
 /* ==========================
-   CREATE & VERIFY TRANSPORTER
+   MIDDLEWARE
 ========================== */
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.EMAIL,
-    pass: process.env.EMAIL_PASS, // ✅ APP PASSWORD ONLY
-  },
-});
-
-transporter.verify((err, success) => {
-  if (err) {
-    console.error("✗ Mailer verification failed:", err.message);
-  } else {
-    console.log("✓ Mailer is ready to send emails");
-  }
-});
+app.use(cors({ origin: "*" }));
+app.use(express.json());
 
 /* ==========================
    SEND MAIL ROUTE
@@ -42,6 +24,15 @@ app.post("/send-mail", async (req, res) => {
       });
     }
 
+    // 🔹 Create transporter INSIDE request (serverless safe)
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL,
+        pass: process.env.EMAIL_PASS, // APP PASSWORD
+      },
+    });
+
     await transporter.sendMail({
       from: `"Website Appointment" <${process.env.EMAIL}>`,
       to: process.env.EMAIL,
@@ -50,16 +41,16 @@ app.post("/send-mail", async (req, res) => {
       html: `
         <h2>New Appointment</h2>
         <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Phone:</strong> ${phone || "-"}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Service:</strong> ${service}</p>
+        <p><strong>Service:</strong> ${service || "-"}</p>
         <p><strong>Message:</strong> ${message}</p>
       `,
     });
 
     return res.json({ success: true });
   } catch (error) {
-    console.error("Mailer error:", error.message);
+    console.error("Mailer error:", error);
     return res.status(500).json({
       success: false,
       message: "Email sending failed",
@@ -68,13 +59,13 @@ app.post("/send-mail", async (req, res) => {
 });
 
 /* ==========================
-   SERVER
+   TEST ROUTE
 ========================== */
-app.listen(5000, () => {
-  console.log("🚀 Server running on http://localhost:5000");
-});
-
-// test
 app.get("/test", (req, res) => {
   res.json({ message: "Server is alive!" });
 });
+
+/* ==========================
+   EXPORT (NO app.listen)
+========================== */
+export default app;
