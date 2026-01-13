@@ -79,7 +79,7 @@ export default function Footer() {
               <Facebook />
             </a>
            <a
-              href="https://www.instagram.com/hayat_eyecentre?igsh=enFiNjBzNjhsdXFs"
+              href="https://www.instagram.com/hayat_eyecentre"
               target="_blank"
               rel="noopener noreferrer"
               className="
