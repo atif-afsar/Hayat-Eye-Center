@@ -11,7 +11,7 @@ const cards = [
   },
   {
     title: "Email Us",
-    desc: "info@hayateye.com\nsupport@hayateye.com",
+    desc: "hayateyecentre786@gmail.com",
     icon: "✉️",
   },
   {
