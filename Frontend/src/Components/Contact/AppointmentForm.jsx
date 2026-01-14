@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_URL = "https://hayat-backend.vercel.app/";
+const API_URL = "https://hayat-eye-center-backend.vercel.app";
 
 export default function AppointmentForm() {
   const [formData, setFormData] = useState({
@@ -21,44 +21,43 @@ export default function AppointmentForm() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setStatus("idle");
+  e.preventDefault();
+  setLoading(true);
+  setStatus("idle");
 
-    try {
-      const res = await fetch(API_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+  try {
+    const res = await fetch(`${API_URL}/send-mail`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
 
-      const result = await res.json();
+    const result = await res.json();
 
-      if (!res.ok || !result.success) {
-        throw new Error(result.message || "Failed to send");
-      }
-
-      setStatus("success");
-      setStatusMsg("Appointment request sent successfully 🎉");
-
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        service: "General Consultation",
-        message: "",
-      });
-
-      // auto-hide success message
-      setTimeout(() => setStatus("idle"), 4000);
-    } catch (err) {
-      console.error(err);
-      setStatus("error");
-      setStatusMsg("Server not responding. Please try again.");
-    } finally {
-      setLoading(false);
+    if (!res.ok || !result.success) {
+      throw new Error(result.message || "Failed to send");
     }
-  };
+
+    setStatus("success");
+    setStatusMsg("Appointment request sent successfully 🎉");
+
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      service: "General Consultation",
+      message: "",
+    });
+
+    setTimeout(() => setStatus("idle"), 4000);
+  } catch (err) {
+    console.error(err);
+    setStatus("error");
+    setStatusMsg("Server not responding. Please try again.");
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <div className="bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-md border border-gray-200 dark:border-slate-700 relative overflow-hidden">
